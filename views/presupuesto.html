@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>The Spa</title>
+    </head>
+    <body>
+        <div id="div_contenedor_principal">
+            <!--HEADER-->
+            <header id="div_cabecera">
+                <div class="div_logo">
+                    <img class="img_logo" src="../imágenes/Logotipo.png" alt="Logotipo Spa">
+                    <h1>The Spa</h1>
+                </div>
+            </header>
+
+            <!--MENU DE NAVEGACIÓN-->
+            <nav id="div_menu">
+                <div><a href="../index.html">INICIO</a></div>
+                <div><a href="../views/productos.html">SERVICIOS</a></div>
+                <div><a class="active" href="../views/presupuesto.html">TARIFAS</a> </div>
+                <div><a href="../views/contacto.html">CONTACTO</a></div>
+            </nav>
+
+            <section id="contenedor_formulario" >
+                
+                <div>
+                    <h2>Para más información</h2>
+
+                    <form action="#">
+                        Nombre completo: <input type="text" name="Nombre" value="" placeholder="Name" required>
+                        <br><br>
+                        Correo electrónico: <input type="email" name="correo" placeholder="Correo@gmail.com" required>
+                        <br><br>
+                        Teléfono: <input type="tel" name="Teléfono" placeholder="600 000 000" required>
+                        <br><br>
+                        Solicite más información:<br><textarea cols="70" rows="11" name="información" id="texto"></textarea>
+                        <br><br>
+                        He leído la <input type="checkbox" id="privacidad" name="privacidad" required><a href="#" target="#">Política de Privacidad.</a>
+                        <br><br>
+                        <button type="submit" name="boton" value="enviar">Enviar</button>
+                    </form>
+                    
+                </div>
+
+                <div><img class="img_formulario" src="../imágenes/img_formulario.png" alt="Toallas con velas"></div>
+            </section>
+
+            <footer>
+                <div>
+                    <h3>ATENCIÓN AL CLIENTE</h3>
+                    <ul>
+                        <li><img src="../imágenes/sobre.svg" alt="Gmail">info@thespa.com.</li>
+                        
+                        <li><img src="../imágenes/llamada-telefonica.svg" alt="Teléfono">966 666 666.</li>
+                        
+                        <li><img src="../imágenes/whatsapp.svg" alt="WhatsApp">600 000 000.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>UBICACIÓN</h3>
+                    <ul>
+                        <li><img src="../imágenes/marcador.svg" alt="Ubicación">Av. del Río 8, Conil de la Frontera, Cádiz.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>REDES SOCIALES</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><img src="../imágenes/facebook.svg" alt="facebook"></a>@TheSpa.SL</li>
+                        <li><a href="https://www.instagram.com/"><img src="../imágenes/instagram.svg" alt="instagram"></a>@TheSpa.SL</li>
+                        <li><a href="https://x.com/?lang=es"><img src="../imágenes/twitter.svg" alt="twitter"></a>@TheSpa.SL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>AVISO LEGAL</h3>
+                    <ul>
+                        <li>The Spa SL.</li>
+                        <li>Imágenes obtenidas de Google, ChatGPT y flaticon.es.</li>
+                        <li><a href="#">Política de privacidad.</a></li>
+                        <li><a href="#">Política de cookies.</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
