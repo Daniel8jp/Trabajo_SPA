@@ -38,7 +38,7 @@ footer{grid-area: the-footer;}
 	min-height:800px;
 	grid-row: 1 / 2;
 	grid-column: 1 / 4;
-	background-image: url("../imágenes/Cabecera.png");
+	background-image: url("../imagenes/Cabecera.png");
 	background-size: cover;
 	background-position: center;
 }
@@ -53,6 +53,7 @@ footer{grid-area: the-footer;}
 .img_logo{
 	height: 50px;
 	width: 100px;
+	object-fit: cover;
 }
 /* Gestión barra de navegación */
 #div_menu{
@@ -80,10 +81,12 @@ nav a:hover{
 /* Gestión section INICIO */
 .boton_section{
 	background-color:#fad0b3;
-	height: 40px;
-	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 250px;
 	border-radius: 20px;
-	padding: 1px;
 }
 .boton_section a{
 	text-decoration: none;
@@ -124,11 +127,19 @@ nav a:hover{
 .img_section_inicio{
 	height: 200px;
 	width: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin: 30px;
+}
+.img_section_exterior{
+	height: 250px;
+	width: 400px;
+	object-fit: cover;
 	border-radius: 5px;
 	margin: 30px;
 }
 
-/* Gestión section Galería */
+/* Gestión section Galería (productos.html) */
 #gallery_section{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -146,15 +157,16 @@ nav a:hover{
 	grid-template-rows: 200px 200px 200px;
 	gap: 16px;
 }
+/* Imágenes de la galería */
 .gallery img{
 	width: 200px;
 	height: 200px;
 	border-radius: 5px;
-	background-size: cover;
+	object-fit: cover;
 }
 
 
-/* Gestión del Formulario (presupuesto.html) */
+/* Gestión del section (presupuesto.html) */
 #contenedor_formulario{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -167,6 +179,14 @@ nav a:hover{
 	width: 600px;
 	height: 500px;
 	border-radius: 10px;
+	object-fit: cover;
+}
+form div{
+	margin-bottom: 16px;
+}
+form label{
+	display: block;
+	margin-bottom: 4px;
 }
 
 /* Gestión section (contacto.html) */
@@ -182,9 +202,14 @@ nav a:hover{
 	height: 20px;
 	width: 20px;
 }
+.img_contacto{
+	display: flex;
+	flex-direction: column;
+}
 .ubicacion_mapa{
 	width: 700px;
 	height: 500px;
+	object-fit: cover;
 	border-radius: 10px;
 	border: 2px solid saddlebrown;
 }
@@ -192,6 +217,7 @@ nav a:hover{
 	width: 500px;
 	height: 500px;
 }
+
 /* Gestión de footer */
 footer{
 	background-color: #d4a37f;
@@ -203,6 +229,6 @@ footer{
 footer img{
 	height: 20px;
 	width: 20px;
-	background-size: cover;
+	object-fit: cover;
 	margin-top: 10px;
 }
